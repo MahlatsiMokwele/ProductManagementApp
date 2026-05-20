@@ -31,7 +31,8 @@ create the schema, stored functions, and a small seed dataset.
 
 3. **Run the API**
 
-Before running the backend, update the database connection string under `appsettings.json` to ensure the api can connect and communicate with the database.
+Before running the backend, update the database connection int= under `appsettings.json` to ensure the api can connect and communicate with the database.
+Also update the Jwt secret. JWT_SECRET in .env (frontend) should match Jwt secret in `appsettings.json`.
 
 ```bash
    cd backend
