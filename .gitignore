@@ -50,8 +50,3 @@ TestResults/
 coverage/
 *.coverage
 *.coveragexml
-
-# generald notes*.md
-BACKEND_NOTES.md
-FRONTEND_NOTES.md
-demo_script.md
