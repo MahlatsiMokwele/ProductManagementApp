@@ -52,6 +52,17 @@ POST to `/api/auth/login` with those credentials to get a JWT (Swagger UI).
 
 5. **Run the Angular frontend**
 
+### ⚠️ Run this first
+
+```bash
+cd frontend
+npm install
+npm run build     # confirms TS compiles + bundles
+npm test          # confirms specs pass
+```
+
+### Start UI
+
 ```bash
    cd frontend
    npm install
@@ -59,6 +70,19 @@ POST to `/api/auth/login` with those credentials to get a JWT (Swagger UI).
 ```
 
 Opens `http://localhost:4200`. Will redirect to `/login` until you sign in.
+
+## Possible issues (CORS)
+
+If you need to allow other origins (apart from the configured localhost:4200), add the following to the `appsettings.json` backend file:
+
+```bash
+   "Cors": {
+   "AllowedOrigins": [
+      "http://localhost:4200",
+      "https://your-deployed-frontend.example.com"
+      ]
+   }
+```
 
 ## What's where
 
