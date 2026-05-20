@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc;
 using ProductCatalog.Api.Auth;
 using ProductCatalog.Api.Dtos;
 using ProductCatalog.Api.Entities;

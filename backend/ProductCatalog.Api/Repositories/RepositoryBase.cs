@@ -1,3 +1,6 @@
+using Npgsql;
+using NpgsqlTypes;
+
 namespace ProductCatalog.Api.Repositories;
 
 // Provides reusable Npgsql plumbing - each concrete repository only has to define its stored-function calls and a row mapper, not connection management.

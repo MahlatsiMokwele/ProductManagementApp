@@ -1,3 +1,4 @@
+using System.Collections.Concurrent;
 using ProductCatalog.Api.Dtos;
 
 namespace ProductCatalog.Api.Caching;

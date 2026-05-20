@@ -1,3 +1,4 @@
+using System.Text.Json;
 namespace ProductCatalog.Api.Middleware;
 
 // Catche unhandled exceptions and convert them to JSON error response.

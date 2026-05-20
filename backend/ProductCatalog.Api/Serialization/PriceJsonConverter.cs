@@ -1,3 +1,6 @@
+using System.Text.Json;
+using System.Text.Json.Serialization;
+
 namespace ProductCatalog.Api.Serialization;
 
 // Custom JSON converter 

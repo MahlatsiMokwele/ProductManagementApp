@@ -1,3 +1,4 @@
+using System.Diagnostics;
 namespace ProductCatalog.Api.Middleware;
 
 // Logs every request's method, path, status code, and elapsed milliseconds.

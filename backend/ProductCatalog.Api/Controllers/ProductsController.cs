@@ -1,3 +1,7 @@
+using System.Security.Claims;
+using System.Text.Json;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using ProductCatalog.Api.Caching;
 using ProductCatalog.Api.Dtos;
 using ProductCatalog.Api.Entities;

@@ -1,3 +1,4 @@
+using System.Text.Json.Serialization;
 using ProductCatalog.Api.Serialization;
 
 namespace ProductCatalog.Api.Dtos;

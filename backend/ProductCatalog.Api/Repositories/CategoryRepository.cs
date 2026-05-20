@@ -1,3 +1,5 @@
+using Npgsql;
+using NpgsqlTypes;
 using ProductCatalog.Api.Entities;
 
 namespace ProductCatalog.Api.Repositories;
