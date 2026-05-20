@@ -1,0 +1,57 @@
+# Environment & secrets
+.env
+.env.local
+*.pem
+
+# .NET build artifacts
+bin/
+obj/
+out/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.dll
+*.pdb
+*.exe
+
+# Rider / Visual Studio
+.idea/
+.vs/
+*.iml
+
+# VS Code
+.vscode/
+
+# Node / Angular (for later frontend work)
+node_modules/
+dist/
+.angular/
+npm-debug.log*
+yarn-error.log*
+.npm/
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Postgres data volume (if mounted locally)
+postgres-data/
+pgdata/
+pgsql/
+
+# Logs
+logs/
+*.log
+
+# Coverage / test output
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+# generald notes*.md
+BACKEND_NOTES.md
+FRONTEND_NOTES.md
+demo_script.md
