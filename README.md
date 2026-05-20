@@ -8,7 +8,7 @@ Angular + TS.
 
 - Docker
 - DotNet 8
-- Angular 16+ (Althoug I have written this with AngularCLI version 20, Node 22.14 and NPM 11.5.2)
+- Angular 16+ (Although I have written this with AngularCLI version 20, Node 22.14 and NPM 11.5.2)
 
 ## Quick start
 
