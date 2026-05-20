@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <!-- .NET 8 LTS. -->
+    <TargetFramework>net8.0</TargetFramework>
+
+    <!-- Nullable reference types ON throughout the project. -->
+    <Nullable>enable</Nullable>
+
+    <!-- Implicit usings on so common namespaces (System, System.Linq, etc.) don't need to be imported. -->
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <!-- Warnings as errors for nullable so the team can't accidentally ignore them. -->
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningsAsErrors>CS8600;CS8601;CS8602;CS8603;CS8604;CS8618;CS8625</WarningsAsErrors>
+
+    <RootNamespace>ProductCatalog.Api</RootNamespace>
+    <AssemblyName>ProductCatalog.Api</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- JWT bearer auth: validates incoming tokens via the standard middleware. -->
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.10" />
+    <!-- JWT issuance: SymmetricSecurityKey, SigningCredentials, JwtSecurityTokenHandler. -->
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.6.0" />
+
+    <!-- Npgsql is the ADO.NET driver for Postgres. We call stored functions through it directly. -->
+    <PackageReference Include="Npgsql" Version="8.0.4" />
+
+    <!-- BCrypt for password hashing. -->
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+
+    <!-- Swagger UI for easy manual testing. -->
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.7.3" />
+  </ItemGroup>
+
+</Project>
